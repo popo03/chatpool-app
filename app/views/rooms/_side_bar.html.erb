@@ -1,6 +1,6 @@
 <div class="side-bar-header">
   <div class="header-name">
-    <a href="#">You</a>
+    <%= link_to current_user.name, edit_user_path(current_user)%>
   </div>
   <div class="create-group">
     <a href="#">要件を作成する</a>
