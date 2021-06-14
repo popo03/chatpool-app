@@ -9,4 +9,7 @@ class User < ApplicationRecord
 
   validates :name, presence: true
   validates :position_id, numericality: { other_than: 0 }
+
+  has_many :user_groups
+  has_many :groups, through: :user_groups
 end
