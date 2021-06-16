@@ -1,0 +1,15 @@
+<div class="message">
+  <div class="upper-message">
+    <div class="message-user">
+      <%= room.user.name %>
+    </div>
+    <div class="message-date">
+      <%= l room.created_at %>
+    </div>
+  </div>
+  <div class="lower-message">
+    <div class="message-content">
+      <%= room.text %>
+    </div>
+  </div>
+</div>

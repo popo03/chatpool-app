@@ -11,7 +11,7 @@
   <% current_user.groups.each do |room| %>
     <div class="subject">
       <div class="subject-name">
-        <%= room.group_name %>
+        <%= link_to room.group_name, group_rooms_path(room) %>
       </div>
     </div>
   <% end %>
