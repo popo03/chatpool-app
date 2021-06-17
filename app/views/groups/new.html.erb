@@ -16,7 +16,7 @@
         <label class='chat-room-form__label' for='chat_room_チャットメンバー'>メンバー</label>
       </div>
       <div class='chat-room-form__field--right'>
-        <select multiple name="group[user_ids][]">
+        <select multiple name="group[user_ids][]" >
           <option value="">ユーザーを選択して下さい</option>
           <% User.where.not(id: current_user.id).each do |user| %>
             <option value=<%= user.id %>><%= user.name %></option>
