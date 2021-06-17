@@ -14,7 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #253141;
+  background-color: #253142;
 }
 
 .header-name a {
@@ -23,17 +23,27 @@
   text-decoration: none;
 }
 
+.header-name a:hover {
+  border-bottom: 1px solid white;
+}
+
 .create-group a {
   font-size: 10px;
   border: 1px solid lightblue;
   padding: 14px;
   color: deepskyblue;
   text-decoration: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+}
+
+.create-group a:hover {
+  color: yellow;
 }
 
 .rooms {
   height: calc(100vh - 100px);
-  background-color: mediumslateblue;
+  background-color: floralwhite;
   padding: 0 20px;
   overflow: scroll;
 }
@@ -44,12 +54,16 @@
 
 .subject-name a {
   text-decoration: none;
-  color: white;
+  color: black;
+}
+
+.subject-name:hover {
+  border-bottom: 2px solid black;
 }
 
 .chat {
   width: calc(100vw - 300px);
-  background-color: floralwhite;
+  background-color: #253141;
 }
 
 .chat-header {
@@ -62,7 +76,7 @@
 .header-title {
   font-size: 24px;
   margin-top: 36px;
-  color: #333;
+  color: white;
 }
 
 .header-button {
@@ -71,15 +85,23 @@
 
 .header-button a {
   text-decoration: none;
-  border: 1px solid darkred;
-  color: darkred;
+  border: 1px solid black;
+  background-color: #555;
+  color: white;
   padding: 20px 40px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+}
+
+.header-button a:hover {
+  background-color: #ff3366;
+  color: black;
 }
 
 .messages {
   height: calc(100vh - 100px - 90px);
-  background-color: palegoldenrod;
-  padding: 46px 40px 0;
+  background-color: floralwhite;
+  padding: 46px 40px 10px;
   overflow: scroll;
 }
 
@@ -114,7 +136,7 @@
 
 .form {
   height: 90px;
-  background-color: lightgrey;
+  background-color: floralwhite;
   padding: 20px 40px;
   display: flex;
 }
@@ -130,16 +152,23 @@
   height: 50px;
   width: 100%;
   padding-left: 10px;
+  border: 1px solid black;
 }
 
 .form-submit {
-  background-color: #38AEF0;
+  background-color: #555;
   border: none;
   color: white;
   font-size: 16px;
   height: 50px;
   margin-left: 15px;
   padding: 0 20px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+}
+
+.form-submit:hover {
+  background-color: #38AEF0;
 }
 
 .form-image {
@@ -150,6 +179,12 @@
   width: 60px;
   margin: 5px 10px;
   text-align: center;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, .4);
+}
+
+.form-image:hover {
+  background-color: #38AEF0;
 }
 
 .hidden {

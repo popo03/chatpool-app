@@ -22,14 +22,7 @@
           </div>
           <%= f.collection_select(:position_id, Position.all, :id, :name, {}, {class:"select-box"}) %>
         </div>
-        <div class='field'>
-          <div class='field-label'>
-            <%= f.label :email%>
-          </div>
-          <div class='field-input'>
-            <%= f.email_field :email%>
-          </div>
-        </div>
+        
         <div class='actions'>
           <%= f.submit "Update", class: 'btn'%>
         </div>

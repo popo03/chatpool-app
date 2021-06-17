@@ -6,7 +6,7 @@
   </div>
   <div class="right-header">
     <div class="header-button">
-      <%= link_to "削除", group_path(@group), method: :delete %>
+      <%= link_to "削除", group_path(@group), method: :delete, data: {confirm: '削除しますか？'} %>
     </div>
   </div>
 </div>
